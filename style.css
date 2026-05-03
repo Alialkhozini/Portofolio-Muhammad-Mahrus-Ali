@@ -26,10 +26,16 @@ a{
     color: #000;
 }
 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 header{
@@ -54,6 +60,7 @@ header .logo{
 span{
     background: var(--gradient-color-bg);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -73,6 +80,7 @@ ul.navlist{
 .navlist li a:hover,.navlist li a.active{
     background: var(--gradient-color-bg);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -176,6 +184,7 @@ section{
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
     transition: .6s;
     letter-spacing: 2px;
@@ -975,24 +984,7 @@ footer{
     color: #fff;
     place-items: center;
     font-size: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
 
 /*======================= @keyframes ============================ */
