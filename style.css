@@ -1194,28 +1194,45 @@ footer{
     }
 }
 
-/* ===== RESPONSIVE HERO CLEAN FIX ===== */
+/* ===== RESPONSIVE HERO CLEAN FINAL ===== */
 
 @media (max-width: 991px) {
-
     .home {
         flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
         padding-top: 120px;
+        overflow-x: hidden;
     }
 
     .hero-info {
+        width: 100%;
         margin-top: 0;
     }
 
+    .hero-info h1 {
+        font-size: 2.6rem;
+        line-height: 1.2;
+    }
+
     .hero-info p {
-        margin: 0 auto;
         max-width: 600px;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 
     .text-animate {
+        width: 18rem;
         margin: 0 auto;
+    }
+
+    .text-animate h2 {
+        font-size: 1.5rem;
+        animation: mobileMoveText 3s linear infinite;
+    }
+
+    .text-animate h2::before {
+        animation: mobileMoveCursor 3s linear infinite;
     }
 
     .btn-box {
@@ -1230,30 +1247,72 @@ footer{
         margin: 0 auto;
     }
 
+    .img-hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        overflow: visible;
+    }
+
+    .hero-circle-wrapper {
+        position: relative;
+        width: min(82vw, 340px);
+        height: min(82vw, 340px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .rotate-text {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: min(82vw, 340px);
+        height: min(82vw, 340px);
+        padding: 0;
+        overflow: visible;
+        transform: translate(-50%, -50%);
+    }
+
+    .rotate-text .text {
+        width: min(82vw, 340px);
+        height: min(82vw, 340px);
+    }
+
+    .rotate-text span {
+        width: min(72vw, 300px);
+        height: min(72vw, 300px);
+    }
+
+    .text b {
+        transform-origin: 0 min(41vw, 170px);
+        font-size: .85rem;
+    }
+
     .img-hero img {
-        width: 320px;
+        width: min(60vw, 245px);
+        position: relative;
+        z-index: 10;
+        margin-top: 14px;
     }
 }
 
 @media (max-width: 530px) {
+    .home {
+        padding-top: 110px;
+        gap: 1.5rem;
+    }
 
     .hero-info h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-    }
-
-    .text-animate {
-        width: 100%;
-    }
-
-    .text-animate h2 {
-        font-size: 1.6rem;
+        font-size: 2.25rem;
     }
 
     .hero-info p {
         font-size: .9rem;
         line-height: 1.7;
-        padding: 0 .5rem;
     }
 
     .btn-box {
@@ -1266,9 +1325,30 @@ footer{
         width: 85%;
         justify-content: center;
     }
+}
 
-    .img-hero img {
-        width: 250px;
+@keyframes mobileMoveText {
+    0%, 10%, 100% {
+        background-position: -18rem 0;
+    }
+
+    65%, 85% {
+        background-position: 0rem 0;
+    }
+}
+
+@keyframes mobileMoveCursor {
+    0%, 10%, 100% {
+        width: 0;
+    }
+
+    65%, 78%, 85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%, 85% {
+        opacity: 0;
     }
 }
 
