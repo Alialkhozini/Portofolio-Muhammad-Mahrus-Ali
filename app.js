@@ -390,15 +390,15 @@ function LogonScreen({ isVisible, onLogin }) {
       h('div', { key: 'line', className: 'absolute bottom-0 left-0 right-0 xp-divider-horizontal' })
     ]),
     h('main', { key: 'main', className: 'flex-grow w-full xp-logon-canvas relative flex items-center justify-center' }, [
-      h('div', { className: `w-full h-full max-w-6xl mx-auto flex ${mobile ? 'flex-col' : ''} items-center relative px-6 md:px-12` }, [
-        h('div', { key: 'welcome', className: `${mobile ? 'w-full pt-8 pb-4 flex items-center justify-center' : 'w-1/2 h-full flex items-center justify-end pr-10 md:pr-16'}` }, [
+      h('div', { className: `w-full h-full max-w-6xl mx-auto flex ${mobile ? 'flex-col justify-center gap-6' : ''} items-center relative px-6 md:px-12` }, [
+        h('div', { key: 'welcome', className: `${mobile ? 'w-full flex items-center justify-center' : 'w-1/2 h-full flex items-center justify-end pr-10 md:pr-16'}` }, [
           h('h1', { className: `xp-welcome-text ${mobile ? 'text-3xl' : 'text-5xl md:text-[62px] lg:text-[70px]'} select-none tracking-tight` }, 'welcome')
         ]),
         !mobile && h('div', { key: 'divider', className: 'xp-center-divider flex-shrink-0' }),
-        h('div', { key: 'user-container', className: `${mobile ? 'w-full flex flex-col items-center' : 'w-1/2 h-full flex flex-col justify-center pl-10 md:pl-16'}` }, [
+        h('div', { key: 'user-container', className: `${mobile ? 'w-full flex flex-col items-center justify-center' : 'w-1/2 h-full flex flex-col justify-center pl-10 md:pl-16'}` }, [
           h('div', { className: `flex flex-col ${mobile ? 'items-center' : 'items-start'} max-w-sm` }, [
             h('div', {
-              className: 'xp-user-item active p-2.5 -ml-2.5 flex items-center gap-4 cursor-pointer group rounded',
+              className: `xp-user-item active p-2.5 ${mobile ? 'mx-auto' : '-ml-2.5'} flex items-center gap-4 cursor-pointer group rounded`,
               onClick: onLogin,
               title: 'Click to log on'
             }, [
@@ -429,7 +429,7 @@ function LogonScreen({ isVisible, onLogin }) {
         ])
       ])
     ]),
-    h('footer', { key: 'footer', className: 'h-[74px] w-full bg-[#001768] flex-shrink-0 relative flex items-center justify-center' }, [
+    h('footer', { key: 'footer', className: `${mobile ? 'h-10' : 'h-[74px]'} w-full bg-[#001768] flex-shrink-0 relative flex items-center justify-center` }, [
       h('div', { className: 'absolute top-0 left-0 right-0 xp-divider-horizontal' })
     ])
   ]);
