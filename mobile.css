@@ -1,0 +1,55 @@
+
+/* === Mobile Responsive Utilities === */
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+/* Touch-friendly adjustments for mobile */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .xp-window.maximized {
+    border: none !important;
+    border-radius: 0 !important;
+    width: 100vw !important;
+    height: calc(100vh - 36px) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .xp-start-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .xp-taskbar { height: 36px; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  .xp-progress-box { width: 100px; }
+  .xp-welcome-text { font-size: 2rem !important; }
+  #desktop-icons-container {
+    padding-top: 8px;
+    height: auto !important;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+  }
+  .desktop-icon {
+    width: 84px !important;
+    padding: 6px 2px !important;
+  }
+  .xp-tray {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+  #xp-volume-slider-popup {
+    right: 4px !important;
+    left: 4px !important;
+    width: auto !important;
+  }
+  #xp-balloon-tip {
+    right: 8px !important;
+    left: 8px !important;
+    max-width: none !important;
+  }
+}
+@media (max-width: 400px) {
+  .xp-welcome-text { font-size: 1.5rem !important; }
+  #desktop-icons-container { gap: 4px !important; padding: 6px !important; }
+  .desktop-icon { width: 80px !important; }
+}
