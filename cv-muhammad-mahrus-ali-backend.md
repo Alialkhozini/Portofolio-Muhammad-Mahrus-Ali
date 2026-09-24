@@ -52,5 +52,5 @@ Backend and Fullstack JavaScript Developer specializing in building production-g
 ---
 
 ## Education & Training
-- **Full-stack Web Developer Program** — Pijar Camp (2022)
-- **SMK Teknik Kendaraan Ringan** — SMK Al-Muallim Kesugian Cilacap (2019)
+- **Bachelor of Software Engineering** — Telkom University Purwokerto
+- **Mathematics and Natural Sciences** — SMAN 1 Kedungwuni (2020)

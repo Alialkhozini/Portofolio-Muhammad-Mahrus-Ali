@@ -325,8 +325,8 @@ systems and multi-product platforms with Node.js and Next.js.
     platform serving UMKM and developers with AI-powered tools.
 
 * Education:
-  - Full-stack Web Developer, Pijar Camp (2022)
-  - SMK Teknik Kendaraan Ringan, SMK Al-Muallim Kesugian Cilacap (2019)
+  - Bachelor of Software Engineering, Telkom University Purwokerto
+  - Mathematics and Natural Sciences, SMAN 1 Kedungwuni (2020)
 
 Feel free to ping me via "Contact & Socials" or type 'help' in the Terminal!
 `;
