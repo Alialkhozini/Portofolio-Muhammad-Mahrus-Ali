@@ -3,6 +3,7 @@
 - **Email**: [muhammadmahrus2310@gmail.com](mailto:muhammadmahrus2310@gmail.com)
 - **GitHub**: [github.com/Alialkhozini](https://github.com/Alialkhozini) • [Repositories](https://github.com/Alialkhozini?tab=repositories)
 - **LinkedIn**: [Muhammad Mahrus Ali](https://www.linkedin.com/in/muhammad-mahrus-ali-1029a9299?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- **WhatsApp**: [+62 851-5672-5521](https://wa.me/6285156725521)
 - **Website**: [alialkhozini.my.id](https://alialkhozini.my.id)
 
 ---

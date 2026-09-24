@@ -886,6 +886,7 @@ function TerminalWindow({ windowState, isActive, onBringToFront, onClose, onMini
       output = h('div', { className: 'text-stone-300 space-y-1' }, [
         h('div', { key: 'ok' }, 'HTTP/1.1 200 OK'),
         h('div', { key: 'email' }, ['Email: ', h('a', { href: 'mailto:muhammadmahrus2310@gmail.com', className: 'text-sky-300 underline' }, 'muhammadmahrus2310@gmail.com')]),
+        h('div', { key: 'wa' }, ['WhatsApp: ', h('a', { href: 'https://wa.me/6285156725521', target: '_blank', rel: 'noreferrer', className: 'text-green-400 underline' }, '+62 851-5672-5521')]),
         h('div', { key: 'gh' }, ['GitHub: ', h('a', { href: 'https://github.com/Alialkhozini', target: '_blank', rel: 'noreferrer', className: 'text-blue-400 underline' }, 'https://github.com/Alialkhozini')]),
         h('div', { key: 'repos' }, ['Repositories: ', h('a', { href: 'https://github.com/Alialkhozini?tab=repositories', target: '_blank', rel: 'noreferrer', className: 'text-blue-400 underline' }, 'https://github.com/Alialkhozini?tab=repositories')]),
         h('div', { key: 'li' }, ['LinkedIn: ', h('a', { href: 'https://www.linkedin.com/in/muhammad-mahrus-ali-1029a9299?utm_source=share_via&utm_content=profile&utm_medium=member_android', target: '_blank', rel: 'noreferrer', className: 'text-blue-400 underline' }, 'Muhammad Mahrus Ali LinkedIn')]),
@@ -1171,7 +1172,7 @@ function ContactWindow({ windowState, isActive, onBringToFront, onClose, onMinim
 
   if (!windowState.isOpen || windowState.isMinimized) return null;
 
-  const phone = '6282350242821';
+  const phone = '6285156725521';
 
   const handleSend = () => {
     const senderName = name.trim() || 'Visitor';
